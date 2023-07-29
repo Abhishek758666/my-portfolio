@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABHISHEK KHATI</title>
+
+    <!-- *************************** -->
+    <!-- icon link -->
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap">
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+
+    <!-- **************************** -->
+    <!-- header design -->
+    <header class="header">
+    <a href="#" class="logo">Abhishek</a>
+    <nav class="navbar">
+        <div class="footer-icontop">
+    <a href="index.html"><i class="bx bxs-home"></i></a></div>
+    </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="calculator">
+        <input type="text" id="display" disabled></input>
+        <div class="buttons">
+            <section class="rows">
+                <div id="other" onclick="clearDisplay()">C</div>
+                <div id="other" onclick="toggleSign()">+/-</div>
+                <div id="other" onclick="appendValue('%')">%</div>
+                <div id="orange" onclick="appendValue('/')">/</div>
+            </section>
+            <section class="rows">
+                <div onclick="appendValue('7')">7</div>
+                <div onclick="appendValue('8')">8</div>
+                <div onclick="appendValue('9')">9</div>
+                <div id="orange" onclick="appendValue('*')">X</div>
+            </section>
+            <section class="rows">
+                <div onclick="appendValue('4')">4</div>
+                <div onclick="appendValue('5')">5</div>
+                <div onclick="appendValue('6')">6</div>
+                <div id="orange" onclick="appendValue('-')">-</div>
+            </section>
+            <section class="rows">
+                <div onclick="appendValue('1')">1</div>
+                <div onclick="appendValue('2')">2</div>
+                <div onclick="appendValue('3')">3</div>
+                <div id="orange" onclick="appendValue('+')">+</div>
+            </section>
+            <section class="rows">
+                <div onclick="appendValue('0')">0</div>
+                <div onclick="appendValue('.')">.</div>
+                <div class="zero" id="orange" onclick="calculate()">=</div>
+            </section>
+        </div>
+    </main>
+
+<!-- *************** -->
+<!-- footer section -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>copyright &copy; 2023 by abhishek | all rights reserved</p>
+    </div>
+    <div class="footer-icontop">
+        <a href="index.html"><i class="bx bxs-home"></i></a>
+    </div>
+</footer>
+    <!-- scroll reveal -->
+    <script src="calc.js"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+</html>
